@@ -1,0 +1,33 @@
+.survey{
+	blockquote {
+		background: #f2f2f2;
+		font-style: normal;
+		display: block;
+		font-size: 1em;
+		line-height: 2em;
+		border-left: 5px solid $primaryColor;
+		padding: 10px 32px;
+		box-sizing: border-box;
+		margin: 0 0 2em 0;
+		p{
+			margin:0 0 .5em 0;
+		}
+		ul{
+			margin-top: 0;
+		}
+	}
+	form{
+		.form_title {
+			display: block;
+			width: 100%;
+			text-align: left;
+		}
+		.form_content {
+			display: block;
+			width: 100%;
+		}
+		img.captcha+input {
+			width: 150px;
+		}
+	}
+}
