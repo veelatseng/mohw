@@ -760,7 +760,7 @@
     .slick-list{
       &:before{
         content: "";
-        width: 100px;
+        width: 50px;
         height: 100%;
         @include gradient(#000, transparent, horizontal);
         display: block;
@@ -771,7 +771,7 @@
       }
       &:after{
         content: "";
-        width: 100px;
+        width: 50px;
         height: 100%;
         @include gradient(transparent, #000, horizontal);
         display: block;
