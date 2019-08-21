@@ -105,16 +105,16 @@ $(function() {
       infinite: true,
     });
   });
-$(function(){
-  $('.topic_title a').click(function(e){
-    $(this).next('.topic_content').slideDown();
-    e.preventDefault();
-  });
-  $('.topic_content .close a').click(function(e){
-    $('.topic_content').slideUp();
-    e.preventDefault();
-  });
-});
+// $(function(){
+//   $('.topic_title>a').click(function(e){
+//     $(this).next('.topic_content').slideDown();
+//     e.preventDefault();
+//   });
+//   $('.topic_content .close a').click(function(e){
+//     $('.topic_content').slideUp();
+//     e.preventDefault();
+//   });
+// });
 $(function(){
   $(".hero_block .video .close").click(function(e){
     $('.hero_block .video').hide();

@@ -123,7 +123,7 @@ $(function() {
             $('.searchCtrl').off().click(function(event) {
                 $('.search').stop(true,true).fadeToggle();
             });
-            $('.topic_title a').click(function(e){
+            $('.topic_title>a').click(function(e){
                 $(this).parent(".topic_title").siblings('.topic_title').children('.topic_content').slideUp();
                 $(this).next('.topic_content').slideDown();
                 e.preventDefault();
@@ -145,7 +145,7 @@ $(function() {
             $('.icon_search').off().click(function(event) {
                 $('.search').stop(true,true).fadeToggle();
             });
-            $('.topic_title a').click(function(e){
+            $('.topic_title>a').click(function(e){
                 $(this).next('.topic_content').slideDown();
                 e.preventDefault();
             });
