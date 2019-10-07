@@ -503,39 +503,80 @@ $(function () {
         },
         stackLabels: {
           enabled: true,
-                // style: {
-                //     fontWeight: 'bold',
-                //     color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                // }
-              }
-            },       
-            tooltip: {
-              formatter: function () {
-                return '<b>' + this.x + '</b><br/>' +
-                this.series.name + ': ' + this.y + ' 件<br/>' +
-                '總數: ' + this.point.stackTotal + ' 件';
-              }
-            },
-            plotOptions: {
-              column: {
-                stacking: 'normal',
-                dataLabels: {
-                  enabled: true,
-                  color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                  style: {
-                    textShadow: '0 0 3px black'
-                  }
-                }
-              }
-            },
-            series: [{
-              name: '籍屬原住民',
-              data: [253, 35, 84, 68],
-              color:"#ff6633"
-            }, {
-              name: '籍屬離島地區',
-              data: [258, 39, 167, 45],
-              color:"#b04fad"
-            }]
-          });
+        }
+      },       
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        column: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '籍屬原住民',
+        data: [253, 35, 84, 68],
+        color:"#ff6633"
+      }, {
+        name: '籍屬離島地區',
+        data: [258, 39, 167, 45],
+        color:"#b04fad"
+      }]
+    });
+    $('.chart7 .chart').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      style: {
+        color: '#555',
+        fontSize: "12px",
+        fontWeight: "blod",
+        fontFamily: "Courier new",
+      },
+      chart: {
+        type: 'line',
+        backgroundColor:'rgba(255, 255, 255, 0)'          
+      },
+      title: {
+        text: '近年專科護理師領證數統計'
+      },
+      subtitle: {
+        text: '107年2-11月'
+      },
+      xAxis: {
+        categories: ['二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '數量'
+        }
+      },
+      plotOptions: {
+        line: {
+          dataLabels: {
+            enabled: true,
+          }
+        }
+      },
+      series: [{
+        name: '案件數',
+        data: [9, 12, 7, 22, 21, 14, 9, 21, 12, 12],
+        color: "#ff6633"
+      }],
+    });
   });  

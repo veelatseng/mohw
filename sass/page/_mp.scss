@@ -535,6 +535,7 @@
     position: relative;
     z-index: 99;
     margin-top: 0;
+    letter-spacing: -1px;
   }
   .more{
     margin: 0 auto 20px auto;
@@ -1085,9 +1086,9 @@
       }
       li{
         float: left;
-        width: 16%;
+        width: 14%;
         border-right: 1px solid #cfcfcf;
-        padding: 5px .25%;
+        padding: 5px .05%;
         @include screen('tablet') {
           width: 33%;
           border-right: 0;
@@ -1097,12 +1098,15 @@
           width: 49%;
           border-right: 0;
         }
+        &:last-child{
+          border-right: 0;
+        }
         .number,.title{
           display: block;
           text-align: center;
         }
         .number{
-          font-size: 3.125em;
+          font-size: 3em;
           font-family: "Century Gothic";
           margin-bottom: 8px;
           margin-top: 10px;
@@ -1113,20 +1117,26 @@
           }
         }
         .title{
-          font-size: 0.938em;
-          letter-spacing: 1px;
+          font-size: 0.875em;
+          // letter-spacing: 1px;
           color: #888;
         }
       }
     }
   }
-  .chart1,.chart2,.chart3,.chart4,.chart5,.chart6,.chart7{
+  .col2{
     padding: 15px;
     @include make-xs-column(12);
     @include make-sm-column(6);
     @include make-md-column(6);
     @include make-lg-column(6);
     @include box-sizing();
+    @include screen('mobile') {
+      margin-bottom: 10px;
+    }
+  }
+  .col1{
+    padding: 15px;
     @include screen('mobile') {
       margin-bottom: 10px;
     }
