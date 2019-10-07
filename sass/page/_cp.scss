@@ -298,16 +298,16 @@ div.tag {
   li{
     display: inline-block;
     margin-left: .5em;
-    &.like{
-      &:before{
-        content: "";
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        background: url(../images/basic/icon_like.png) no-repeat 0 0;
-        background-size: 20px;
-        margin-right: 8px;
-        vertical-align: sub;
+    a.like{
+      display: inline-block;
+      vertical-align: sub;
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+      background: url(../images/basic/icon_like.png) no-repeat 0 0;
+      background-size: 20px;
+      &:hover,&:focus{
+        filter: grayscale(1);
       }
     }
   }
