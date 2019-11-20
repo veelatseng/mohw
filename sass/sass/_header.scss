@@ -152,7 +152,7 @@
           padding: 0 .5em;
           text-decoration: none;
           @include aSetting_nocolor;
-          &.icon_fb,&.icon_youtube,&.icon_search,&.icon_sitemap{
+          &.icon_fb,&.icon_youtube,&.icon_search,&.icon_rss,&.icon_sitemap{
             width: 31px;
             height: 31px;
             display: block;
@@ -169,6 +169,10 @@
           }
           &.icon_search{
             background: url(../images/icon_search.png) center center no-repeat;
+          }
+          &.icon_rss{
+            background: url(../images/icon_rss.png) center center no-repeat;
+            background-size: 22px;
           }
           &.icon_sitemap{
             background: url(../images/icon_sitemap.png) center center no-repeat;
