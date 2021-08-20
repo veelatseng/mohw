@@ -1124,14 +1124,17 @@
       list-style: none;
       margin-top: 0;
       padding: 0;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
       @include screen('mobile') {
         padding: 0;
       }
       li{
-        float: left;
-        width: 14%;
+        width: 19%;
         border-right: 1px solid #cfcfcf;
         padding: 5px .05%;
+        margin-bottom: 1rem;
         @include screen('tablet') {
           width: 33%;
           border-right: 0;
@@ -1139,6 +1142,9 @@
         }
         @include screen('mobile') {
           width: 49%;
+          border-right: 0;
+        }
+        &:nth-child(5){
           border-right: 0;
         }
         &:last-child{
