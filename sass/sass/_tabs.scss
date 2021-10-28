@@ -74,10 +74,10 @@
         @include li-reset;
     }
     li {
-        margin: 0 0 1.3em 0;
+        // margin: 0 0 1.3em 0;
         padding: 0;
         line-height: 1.6;
-        border-bottom: 1px #CCC dashed;
+        // border-bottom: 1px #CCC dashed;
         @include screen('mobile') {
             @include text-overflow();
         }

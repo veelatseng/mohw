@@ -579,4 +579,420 @@ $(function () {
         color: "#ff6633"
       }],
     });
+    // chart8 一般護理之家
+    $('#chart8').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'bar',
+        inverted: true,
+        backgroundColor:'rgba(255, 255, 255, 0)'
+      },
+      title: {
+        text: '近三年評鑑家數'
+      },
+      xAxis: {
+        categories: ['109', '108', '107'],
+        title: {
+          text: '評鑑年度'
+        }
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '評鑑家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },
+      legend: {
+        reversed: true
+      },
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '不合格',
+        data: [5, 5, 5],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [70, 177, 300],
+        color:"#c49be5"
+      }]
+    });
+    // chart9 各縣市評鑑統計
+    $('#chart9').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'column',
+        backgroundColor:'rgba(255, 255, 255, 0.1)'            
+      },
+      title: {
+        text: '各縣市評鑑統計'
+      },
+      subtitle: {
+        text: '107年2-11月'
+      },
+      xAxis: {
+        categories: ['臺北市','新北市','桃園市','臺中市','臺南市','高雄市','基隆市','新竹市','新竹縣','苗栗縣','彰化縣','南投縣','雲林縣','嘉義市','嘉義縣','屏東縣','宜蘭縣','花蓮縣','台東縣','澎湖縣','連江縣' ]
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '有效家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },       
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        column: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '尚未評鑑',
+        data: [0, 0, 49, 6, 4, 0, 0, 1, 5, 2,1,1,0,0,1,2,0,2,0,0,0],
+        color:"#434343"
+      },{
+        name: '不合格',
+        data: [2, 0, 0, 5, 5, 0, 0, 2, 0, 1,0,0,1,1,0,0,0,0,0,0,0],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [18, 82, 40, 65, 70, 66, 9, 4, 10, 10,40,16,12,13,13,20,8,3,4,2,1],
+        color:"#c49be5"
+      }]
+    });
+    // chart10 一般護理之家
+    $('#chart10').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'bar',
+        inverted: true,
+        backgroundColor:'rgba(255, 255, 255, 0)'
+      },
+      title: {
+        text: '近三年評鑑家數'
+      },
+      xAxis: {
+        categories: ['109', '108', '107'],
+        title: {
+          text: '評鑑年度'
+        }
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '評鑑家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },
+      legend: {
+        reversed: true
+      },
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '復業／開業未滿一年',
+        data: [5, 5, 5],
+        color:"#18489a"
+      },{
+        name: '不合格',
+        data: [5, 5, 5],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [70, 177, 300],
+        color:"#c49be5"
+      }]
+    });
+    // chart11 各縣市評鑑統計
+    $('#chart11').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'column',
+        backgroundColor:'rgba(255, 255, 255, 0.1)'            
+      },
+      title: {
+        text: '各縣市評鑑統計'
+      },
+      subtitle: {
+        text: '107年2-11月'
+      },
+      xAxis: {
+        categories: ['臺北市','新北市','桃園市','臺中市','臺南市','高雄市','基隆市','新竹市','新竹縣','苗栗縣','彰化縣','南投縣','雲林縣','嘉義市','嘉義縣','屏東縣','宜蘭縣','花蓮縣','台東縣','澎湖縣','連江縣' ]
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '有效家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },       
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        column: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '尚未評鑑',
+        data: [0, 0, 49, 6, 4, 0, 0, 1, 5, 2,1,1,0,0,1,2,0,2,0,0,0],
+        color:"#434343"
+      },{
+        name: '不合格',
+        data: [2, 0, 0, 5, 5, 0, 0, 2, 0, 1,0,0,1,1,0,0,0,0,0,0,0],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [18, 82, 40, 65, 70, 66, 9, 4, 10, 10,40,16,12,13,13,20,8,3,4,2,1],
+        color:"#c49be5"
+      }]
+    });
+    // chart12 一般護理之家
+    $('#chart12').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'bar',
+        inverted: true,
+        backgroundColor:'rgba(255, 255, 255, 0)'
+      },
+      title: {
+        text: '近三年評鑑家數'
+      },
+      xAxis: {
+        categories: ['109', '108', '107'],
+        title: {
+          text: '評鑑年度'
+        }
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '評鑑家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },
+      legend: {
+        reversed: true
+      },
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '不合格',
+        data: [5, 5, 5],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [70, 177, 300],
+        color:"#c49be5"
+      }]
+    });
+    // chart13 各縣市評鑑統計
+    $('#chart13').highcharts({
+      exporting: { 
+        enabled: false
+      },
+      credits: {
+        enabled: false
+      },
+      chart: {
+        type: 'column',
+        backgroundColor:'rgba(255, 255, 255, 0.1)'            
+      },
+      title: {
+        text: '各縣市評鑑統計'
+      },
+      subtitle: {
+        text: '107年2-11月'
+      },
+      xAxis: {
+        categories: ['臺北市','新北市','桃園市','臺中市','臺南市','高雄市','基隆市','新竹市','新竹縣','苗栗縣','彰化縣','南投縣','雲林縣','嘉義市','嘉義縣','屏東縣','宜蘭縣','花蓮縣','台東縣','澎湖縣','連江縣' ]
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: '有效家數'
+        },
+        stackLabels: {
+          enabled: true,
+        }
+      },       
+      tooltip: {
+        formatter: function () {
+          return '<b>' + this.x + '</b><br/>' +
+          this.series.name + ': ' + this.y + ' 件<br/>' +
+          '總數: ' + this.point.stackTotal + ' 件';
+        }
+      },
+      plotOptions: {
+        column: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: true,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            style: {
+              textShadow: '0 0 3px black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: '尚未評鑑',
+        data: [0, 0, 49, 6, 4, 0, 0, 1, 5, 2,1,1,0,0,1,2,0,2,0,0,0],
+        color:"#434343"
+      },{
+        name: '不合格',
+        data: [2, 0, 0, 5, 5, 0, 0, 2, 0, 1,0,0,1,1,0,0,0,0,0,0,0],
+        color:"#fc6578"
+      }, {
+        name: '合格',
+        data: [18, 82, 40, 65, 70, 66, 9, 4, 10, 10,40,16,12,13,13,20,8,3,4,2,1],
+        color:"#c49be5"
+      }]
+    });
   });  
+
+jQuery('img.svg').each(function() {
+  var $img = jQuery(this);
+  var imgID = $img.attr('id');
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+
+  jQuery.get(imgURL, function(data) {
+    // Get the SVG tag, ignore the rest
+    var $svg = jQuery(data).find('svg');
+
+    // Add replaced image's ID to the new SVG
+    if (typeof imgID !== 'undefined') {
+      $svg = $svg.attr('id', imgID);
+    }
+    // Add replaced image's classes to the new SVG
+    if (typeof imgClass !== 'undefined') {
+      $svg = $svg.attr('class', imgClass + ' replaced-svg');
+    }
+
+    // Remove any invalid XML tags as per http://validator.w3.org
+    $svg = $svg.removeAttr('xmlns:a');
+
+    // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+    if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+    }
+
+    // Replace image with new SVG
+    $img.replaceWith($svg);
+
+  }, 'xml');
+
+});
