@@ -8,6 +8,7 @@ h1.title {
     margin: .4em 0 1em 0;
   }
 }
+
 .cp {
   &.small_size {
     font-size: .938em;
@@ -70,19 +71,21 @@ h1.title {
         font-size: 0.938em;
         margin-bottom: .5em;
       }
-      i{
+      i {
         margin-right: .5em;
         opacity: .4;
       }
     }
   }
-  p{
+  p {
     margin-bottom: 1rem;
   }
 }
-h1+.function_panel{
+
+h1+.function_panel {
   margin-top: -0.2em;
 }
+
 // 文章標籤
 div.tag {
   @extend %clearfix;
@@ -115,6 +118,7 @@ div.tag {
     }
   }
 }
+
 // 檔案下載
 .file_download {
   width: 100%;
@@ -184,7 +188,7 @@ div.tag {
         content: counters(counter, ".") " . ";
       }
       @include screen('mobile') {
-        margin-right: 0px; 
+        margin-right: 0px;
         width: 85%;
       }
       .kb {
@@ -239,6 +243,7 @@ div.tag {
     }
   }
 }
+
 // 外部連結
 .web_link {
   width: 100%;
@@ -272,7 +277,7 @@ div.tag {
       display: block;
       @include aSetting_nocolor;
       &:before {
-        position: absolute; 
+        position: absolute;
         top: 5px;
         left: 0px;
         text-align: right;
@@ -282,9 +287,9 @@ div.tag {
       }
     }
   }
-
 }
-.bottom_info{
+
+.bottom_info {
   font-size: 0.938em;
   line-height: 1em;
   list-style: none;
@@ -292,16 +297,16 @@ div.tag {
   padding: .8em;
   background: #F2F2F2;
   overflow: hidden;
-  ul{
+  ul {
     float: right;
     margin: 0;
     padding: 0;
     display: inline-block;
   }
-  li{
+  li {
     display: inline-block;
     margin-left: .5em;
-    a.like{
+    a.like {
       display: inline-block;
       vertical-align: sub;
       margin-right: 5px;
@@ -309,47 +314,49 @@ div.tag {
       height: 20px;
       background: url(../images/basic/icon_like.png) no-repeat 0 0;
       background-size: 20px;
-      &:hover,&:focus{
+      &:hover,
+      &:focus {
         filter: grayscale(1);
       }
     }
   }
 }
-.chart_block{
+
+.chart_block {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   @include screen('tablet') {
     display: block;
   }
-  h3{
+  h3 {
     font-size: 1.5em;
     padding: 4px 0;
     margin: 0.5em 0 1em 0;
     border-bottom: 3px solid $primaryColor;
-    flex-basis:100%;
+    flex-basis: 100%;
   }
-  .chart_text{
+  .chart_text {
     flex: 1 1 48%;
     @include screen('tablet') {
       width: 100%;
     }
-    h4{
+    h4 {
       margin-top: 0;
       margin-bottom: 0.5em;
       font-size: 1.125rem;
     }
-    p{
+    p {
       margin-bottom: 0.5em;
     }
   }
-  .chart{
+  .chart {
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
     margin-bottom: 2rem;
     flex: 0 1 100%;
-    &.col2{
+    &.col2 {
       flex: 0 0 50%;
       margin-left: 2%;
       margin-top: 1.5rem;
@@ -360,22 +367,25 @@ div.tag {
     }
   }
 }
-.map_block{
-  h3{
+
+.map_block {
+  h3 {
     font-size: 1.5em;
     padding: 4px 0;
     margin: 0.5em 0 1em 0;
     border-bottom: 3px solid $primaryColor;
-    flex-basis:100%;
+    flex-basis: 100%;
   }
-  .btn-purple{
+  .btn-purple {
     color: #fff;
-    &:hover,&:focus{
+    &:hover,
+    &:focus {
       color: #fff;
     }
   }
 }
-.taiwan_title{
+
+.taiwan_title {
   clear: both;
   width: 100%;
   font-size: .9375rem;
@@ -384,12 +394,13 @@ div.tag {
   background: url(../images/map_arrow.png) no-repeat left 6px;
   margin-left: 35px;
   margin-top: 2rem;
-  span{
+  span {
     display: block;
     font-size: 1.125rem;
     font-weight: bold;
   }
 }
+
 .taiwan_map {
   display: flex;
   align-items: center;
@@ -436,7 +447,7 @@ div.tag {
         position: absolute;
         background: rgba(0, 0, 0, 0.75);
         text-align: center;
-        padding:0 8px;
+        padding: 0 8px;
         display: none;
         border-radius: 0.2em;
         left: 50%;
@@ -452,10 +463,10 @@ div.tag {
       &:hover,
       &:focus,
       &.active {
-        // transform: scale(1.2); 
+        // transform: scale(1.2);
         // z-index: 3;
-        .st0{
-          fill:#f64e6f;
+        .st0 {
+          fill: #f64e6f;
         }
         &:after {
           display: block;
@@ -471,8 +482,8 @@ div.tag {
       z-index: 2;
       // background: url(../images/map/map_keelung.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       &:after {
         content: '基隆市';
@@ -493,8 +504,8 @@ div.tag {
       top: 50px;
       right: 12px;
       z-index: 1;
-      .st0{
-        fill:#eee2f0;
+      .st0 {
+        fill: #eee2f0;
       }
       // background: url(../images/map/map_yilan.svg) no-repeat center center;
       // background-size: contain;
@@ -522,8 +533,8 @@ div.tag {
       z-index: 2;
       // background: url(../images/map/map_taipei.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       // .count {
       //   left: -105;
@@ -547,8 +558,8 @@ div.tag {
       z-index: 2;
       // background: url(../images/map/map_taipeicounty.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       // .count {
       //   left: auto;
@@ -576,8 +587,8 @@ div.tag {
       right: 91px;
       // background: url(../images/map/map_taoyuan.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       // .count {
       //   left: 10%;
@@ -602,8 +613,8 @@ div.tag {
       right: 101px;
       // background: url(../images/map/map_hsinchucounty.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       // .count {
       //   left: auto;
@@ -630,8 +641,8 @@ div.tag {
       z-index: 2;
       // background: url(../images/map/map_hsinchusi.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#784f9e;
+      .st0 {
+        fill: #784f9e;
       }
       &:after {
         content: '新竹市';
@@ -652,8 +663,8 @@ div.tag {
       right: 122px;
       // background: url(../images/map/map_miaoli.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#926bac;
+      .st0 {
+        fill: #926bac;
       }
       // .count {
       //   left: 25%;
@@ -677,8 +688,8 @@ div.tag {
       right: 90px;
       // background: url(../images/map/map_taichung.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#926bac;
+      .st0 {
+        fill: #926bac;
       }
       // .count {
       //   left: 10%;
@@ -702,8 +713,8 @@ div.tag {
       right: 214px;
       // background: url(../images/map/map_changhwa.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#926bac;
+      .st0 {
+        fill: #926bac;
       }
       // .count {
       //   left: 10%;
@@ -727,8 +738,8 @@ div.tag {
       right: 105px;
       // background: url(../images/map/map_nantuo.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#926bac;
+      .st0 {
+        fill: #926bac;
       }
       // .count {
       //   top: 50%;
@@ -751,8 +762,8 @@ div.tag {
       right: 204px;
       // background: url(../images/map/map_yunlin.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#926bac;
+      .st0 {
+        fill: #926bac;
       }
       // .count {
       //   left: 10%;
@@ -776,8 +787,8 @@ div.tag {
       right: 170px;
       // background: url(../images/map/map_chiayicounty.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#b397c7;
+      .st0 {
+        fill: #b397c7;
       }
       z-index: 2;
       // .count {
@@ -802,8 +813,8 @@ div.tag {
       right: 235px;
       // background: url(../images/map/map_chiayisi.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#b397c7;
+      .st0 {
+        fill: #b397c7;
       }
       z-index: 3;
       &:after {
@@ -823,8 +834,8 @@ div.tag {
       right: 214px;
       // background: url(../images/map/map_tainan.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#b397c7;
+      .st0 {
+        fill: #b397c7;
       }
       z-index: 2;
       // .count {
@@ -832,7 +843,7 @@ div.tag {
       //   left: 30%;
       // }
       &:after {
-        content: '台南市';
+        content: '臺南市';
         left: 0;
         top: 60%;
       }
@@ -850,8 +861,8 @@ div.tag {
       right: 156px;
       // background: url(../images/map/map_kaoshiung.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#b397c7;
+      .st0 {
+        fill: #b397c7;
       }
       // .count {
       //   left: auto;
@@ -877,8 +888,8 @@ div.tag {
       right: 177px;
       // background: url(../images/map/map_pingtung.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#b397c7;
+      .st0 {
+        fill: #b397c7;
       }
       // .count {
       //   left: auto;
@@ -897,7 +908,6 @@ div.tag {
       //   background-size: contain;
       // }
     }
-    
     .hwalien {
       width: 126px;
       height: 224px;
@@ -905,8 +915,8 @@ div.tag {
       right: 41px;
       // background: url(../images/map/map_hwalien.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#eee2f0;
+      .st0 {
+        fill: #eee2f0;
       }
       // .count {
       //   left: auto;
@@ -931,8 +941,8 @@ div.tag {
       right: 85px;
       // background: url(../images/map/map_taitung.svg) no-repeat center center;
       // background-size: contain;
-      .st0{
-        fill:#eee2f0;
+      .st0 {
+        fill: #eee2f0;
       }
       // .count {
       //   left: auto;
@@ -1062,7 +1072,7 @@ div.tag {
       }
     }
   }
-  .county{
+  .county {
     background: #ccc;
     border-radius: 9px;
     padding: 1rem 1rem 4px 1rem;
@@ -1071,12 +1081,12 @@ div.tag {
       background: #781d7a;
       color: #fff;
     }
-    ul{
+    ul {
       @include li-reset;
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       justify-content: space-between;
-      li{
+      li {
         margin-bottom: 12px;
         width: 23%;
         @media screen and (max-width: 800px) {
@@ -1100,22 +1110,25 @@ div.tag {
             margin-right: 0;
           }
         }
-        a{
+        a {
           line-height: 2rem;
           text-align: center;
           display: block;
           background: #eee;
           border-radius: 4px;
-          &:hover,&:focus,&.active{
-            background:#f64e6f;
-            color:#fff;
+          &:hover,
+          &:focus,
+          &.active {
+            background: #f64e6f;
+            color: #fff;
           }
         }
       }
     }
   }
 }
-.map_search{
+
+.map_search {
   background: #eee;
   display: flex;
   justify-content: space-between;
@@ -1128,43 +1141,45 @@ div.tag {
   @include screen('mobile') {
     width: 100%;
   }
-  form{
+  form {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  select{
+  select {
     margin: 0 .2rem;
     width: 20%;
   }
-  input{
+  input {
     margin: 0 .2rem;
     width: 55%;
   }
-  button{
+  button {
     margin: 0 .2rem;
     width: 5%;
     padding: 0.5em 1em !important;
   }
 }
-.date{
+
+.date {
   font-size: .9375rem;
   margin-bottom: 1rem;
-  i{
+  i {
     opacity: .8;
   }
 }
-.map_tab{
+
+.map_tab {
   overflow: hidden;
   padding: 0 10px;
   margin: 0 -10px;
-  .tabItem{
+  .tabItem {
     font-size: 1.25rem;
     border-bottom: 1px solid #222;
     @include screen('mobile') {
       border-bottom: 0;
     }
-    a{
+    a {
       background: transparent;
       color: #444;
       position: relative;
@@ -1173,16 +1188,17 @@ div.tag {
         background: #444;
         color: #fff;
       }
-      span{
+      span {
         margin-left: 4px;
-        &:before{
+        &:before {
           content: "(";
         }
-        &:after{
+        &:after {
           content: ")";
         }
       }
-      &:hover,&:focus{
+      &:hover,
+      &:focus {
         background: #eee2f0;
         @include screen('mobile') {
           background: #781d7a;
@@ -1190,15 +1206,15 @@ div.tag {
         }
       }
     }
-    &.active{
-      a{
+    &.active {
+      a {
         background: transparent;
         color: #444;
         @include screen('mobile') {
           background: #781d7a;
           color: #fff;
         }
-        &:before{
+        &:before {
           content: "";
           width: 70%;
           height: 6px;
@@ -1211,34 +1227,35 @@ div.tag {
             display: none;
           }
         }
-        &:hover,&:focus{
+        &:hover,
+        &:focus {
           background: #eee2f0;
         }
       }
     }
   }
-  .tabContent{
+  .tabContent {
     padding: 30px 0 0 0;
     @include screen('mobile') {
       padding: 15px 0 0 0;
     }
-    .map_tag{
+    .map_tag {
       margin-bottom: 30px;
       @include screen('mobile') {
         margin-bottom: 20px;
       }
-      ul{
+      ul {
         display: flex;
         justify-content: center;
         @include screen('mobile') {
-          flex-wrap:wrap;
+          flex-wrap: wrap;
         }
-        li{
+        li {
           margin: 0 1%;
           @include screen('mobile') {
             margin-bottom: 10px;
           }
-          a{
+          a {
             padding: 0 2rem;
             border-radius: 30px;
             background: #eee;
@@ -1247,66 +1264,70 @@ div.tag {
             @include screen('mobile') {
               padding: 0 1rem;
             }
-            &:hover,&:focus{
+            &:hover,
+            &:focus {
               color: #fff;
               background: #984696;
             }
-            span{
+            span {
               margin-left: 4px;
-              &:before{
+              &:before {
                 content: "(";
               }
-              &:after{
+              &:after {
                 content: ")";
               }
             }
           }
-          &:nth-child(2){
-            a{
-              &:hover,&:focus{
+          &:nth-child(2) {
+            a {
+              &:hover,
+              &:focus {
                 background: #5f52a1;
               }
             }
           }
-          &:nth-child(3){
-            a{
-              &:hover,&:focus{
+          &:nth-child(3) {
+            a {
+              &:hover,
+              &:focus {
                 background: #fb4e79;
               }
             }
           }
-          &:nth-child(4){
-            a{
-              &:hover,&:focus{
-                background: #666  ;
+          &:nth-child(4) {
+            a {
+              &:hover,
+              &:focus {
+                background: #666;
               }
             }
           }
         }
       }
     }
-    .ins_list{
-      ul{
-        li{
+    .ins_list {
+      ul {
+        li {
           margin-bottom: 2rem;
           border-bottom: 0;
           white-space: initial;
           @include screen('mobile') {
             overflow: inherit;
           }
-          .ins_block{
+          .ins_block {
             padding: 20px;
             position: relative;
-            box-shadow: 0 0 8px 0 rgba(0,0,0,.15); 
-            .ins_info{
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+            .ins_info {
               display: flex;
               align-items: flex-start;
               @include screen('mobile') {
                 display: block;
                 position: relative;
               }
-              .ins_dist{
-                padding: 0; 
+              .ins_dist {
+                padding: 0;
                 line-height: 2rem;
                 background: #7c1c76;
                 color: #fff;
@@ -1319,7 +1340,7 @@ div.tag {
                   display: inline-block;
                 }
               }
-              .ins_name{
+              .ins_name {
                 flex: 1 1 76%;
                 padding: 4px 1rem;
                 color: #222;
@@ -1330,9 +1351,9 @@ div.tag {
                   margin-bottom: 0.5rem;
                 }
               }
-              .ins_assess{
+              .ins_assess {
                 color: #fff;
-                padding: 0; 
+                padding: 0;
                 line-height: 2rem;
                 width: 6rem;
                 text-align: center;
@@ -1341,19 +1362,19 @@ div.tag {
                   right: 0;
                   top: 0;
                 }
-                &.pass{
+                &.pass {
                   background: #5f52a1;
                 }
-                &.fail{
+                &.fail {
                   background: #fb4e79;
                 }
-                &.unassess{
+                &.unassess {
                   background: #666;
-                }        
+                }
               }
             }
-            .ins_content{
-              flex:1 1 100%;
+            .ins_content {
+              flex: 1 1 100%;
               justify-content: space-between;
               display: flex;
               margin-top: .5rem;
@@ -1362,19 +1383,19 @@ div.tag {
                 display: block;
                 margin-bottom: 0;
               }
-              &:last-child{
+              &:last-child {
                 margin-bottom: 0;
                 @include screen('mobile') {
                   margin-top: 0;
                 }
               }
-              .block{
+              .block {
                 margin-bottom: 0;
-                flex:0 0 25%;
+                flex: 0 0 25%;
                 @include screen('mobile') {
                   width: 100%;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                   flex: 2 1 50%;
                   padding: 0 1rem;
                   @include screen('mobile') {
@@ -1382,7 +1403,7 @@ div.tag {
                     padding: 0;
                   }
                 }
-                .title{
+                .title {
                   font-size: .875rem;
                   color: #888;
                   margin-bottom: 4px;
@@ -1392,7 +1413,7 @@ div.tag {
                     font-size: 1rem;
                   }
                 }
-                .content{
+                .content {
                   color: #222;
                   @include screen('mobile') {
                     display: inline-block;
