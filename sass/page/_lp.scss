@@ -4,6 +4,9 @@
       text-align: left;
       a {
         @include aSetting_nocolor;
+        .entext{
+          font-size: .875rem;
+        }
       }
       &.date {
         text-align: center;
@@ -43,6 +46,9 @@
           color: $color-word;
           &:hover {
             color: $aHover;
+          }
+          .entext{
+            font-size: .875rem;
           }
           .num {
             width: 1.5em;
@@ -146,6 +152,10 @@
           }
           p{
             margin: 0;
+            &.entext{
+              font-size: .875rem;
+              margin-top: 10px;
+            }
           }
           time {
             color: #aaa;

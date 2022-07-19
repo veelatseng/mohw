@@ -769,13 +769,12 @@
     display: block; 
     margin-bottom: 38px; 
     position: relative;
-    z-index: 97;
+    z-index: 999;
     .slick-list{
       &:before{
         content: "";
         width: 50px;
         height: 100%;
-        @include gradient(#000, transparent, horizontal);
         display: block;
         position: absolute;
         left: 0;
@@ -786,7 +785,6 @@
         content: "";
         width: 50px;
         height: 100%;
-        @include gradient(transparent, #000, horizontal);
         display: block;
         position: absolute;
         right: 0;
@@ -795,12 +793,36 @@
       }
     }
     .slick-prev{
-      background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(255, 255, 255, 0);
+      width: 46px !important;
+      height: 46px !important;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      left: auto;
+      right: 120px;
+      bottom: -84px;
+      top: auto;
+      transform: translate(0, 0);
+      background: url(../images/prev.png) center center no-repeat ;
       background-size: 30px 30px;
+      &:hover, &:focus{
+        background:#873783 url(../images/prev.png) center center no-repeat ;
+      }
     }
     .slick-next {
-      background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(255, 255, 255, 0);
+      width: 46px !important;
+      height: 46px !important;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      left: auto;
+      right: 60px;
+      bottom: -84px;
+      top: auto;
+      transform: translate(0, 0);
+      background: url(../images/next.png) center center no-repeat;
       background-size: 30px 30px;
+      &:hover, &:focus{
+        background:#873783 url(../images/next.png) center center no-repeat;
+      }
     }
     ul{
       margin: 0 -60px;

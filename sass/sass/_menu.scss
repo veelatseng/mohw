@@ -91,6 +91,11 @@
           line-height: 2em;
           letter-spacing: 1px;
           color: #fff;
+          span{
+            display: block;
+            font-size: .937rem;
+            line-height: 160%;
+          }
         }
         &.hasChild {
           >a {
