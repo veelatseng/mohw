@@ -42,11 +42,12 @@ body {
         line-height: 1.25em;
         margin: .4em 0;
         font-size: 1.5em;
-        span{
+        .entitle{
             font-size: .9375rem;
-            margin-left: 1rem;
-            white-space: nowrap;
             color: #888;
+            line-height: 140%;
+            display: block;
+            margin-top: 4px;
         }
     }
 }

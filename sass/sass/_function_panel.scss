@@ -2,10 +2,13 @@
 .function_panel {
     text-align: right;
     // margin: .2em 0;
-    margin: -3em 0 .4em 0;
+    // margin: -3.5em 0 .4em 0;
     // padding: .5em 0 .5em;
     padding: .2em 0 .2em;
     min-height: 35px;
+    position: absolute;
+    right: 0;
+    top: 40px;
     // border-top: 1px solid #DDD;
     // border-bottom: 1px solid #DDD;
     @include screen('mobile') {

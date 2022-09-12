@@ -2,10 +2,17 @@
 // 文章標題
 h1.title {
   line-height: 1.25em;
-  margin: .4em 0 0 0;
+  margin: 2.5em 0 0 0;
   font-size: 1.5em;
   @include screen('mobile') {
     margin: .4em 0 1em 0;
+  }
+  .entitle{
+    font-size: .9375rem;
+    color: #888;
+    line-height: 140%;
+    display: block;
+    margin-top: 4px;
   }
 }
 
@@ -16,6 +23,7 @@ h1.title {
   &.large_size {
     font-size: 1.125em;
   }
+
   table {
     background: #FFF;
   }

@@ -4,7 +4,7 @@
       text-align: left;
       a {
         @include aSetting_nocolor;
-        .entext{
+        .entext {
           font-size: .875rem;
         }
       }
@@ -27,15 +27,16 @@
     }
   }
   .list {
-    &>ul,ol {
+    &>ul,
+    ol {
       list-style-type: none;
       padding: 0;
       border-top: 2px solid $primaryColor;
       &>li {
         padding: 1em 0;
         border-bottom: 1px solid #DDD;
-        position: relative; 
-        .tag{
+        position: relative;
+        .tag {
           margin-left: 2em;
         }
         &>a {
@@ -47,7 +48,7 @@
           &:hover {
             color: $aHover;
           }
-          .entext{
+          .entext {
             font-size: .875rem;
           }
           .num {
@@ -77,20 +78,26 @@
       }
     }
   }
-  .album,.video {
+  .album,
+  .video {
     margin: 1em auto;
     overflow: hidden;
     ul {
       padding: 0;
-      margin: 0 -15px;
+      margin: 0 -8px;
       list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
       li {
         @include make-xs-column(12);
         @include make-sm-column(6);
         @include make-md-column(4);
         @include make-lg-column(4);
-        @include gutter();
+        @include gutter(10px);
         margin-bottom: .5em;
+        display: flex;
+        align-items: stretch;
         a {
           display: block;
           text-align: center;
@@ -125,15 +132,18 @@
             transition: .3s ease-out;
           }
         }
-        .videoOuter{
+        .videoOuter {
           position: relative;
           padding-bottom: 56.25%;
           padding-top: 30px;
           height: 0;
           overflow: hidden;
-          iframe,object,embed{
+          iframe,
+          object,
+          embed {
             position: absolute;
-            top: 0;left: 0;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
           }
@@ -147,20 +157,25 @@
             line-height: 1.5em;
             white-space: nowrap;
             text-overflow: ellipsis;
-            display:block;
-            margin:0 0 5px 0;
+            display: block;
+            margin: 0 0 5px 0;
           }
-          p{
+          p {
             margin: 0;
-            &.entext{
+            &.entext {
               font-size: .875rem;
               margin-top: 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
           }
           time {
             color: #aaa;
             font-size: .938em;
-            display:block;
+            display: block;
             margin: 10px 0 0;
           }
         }

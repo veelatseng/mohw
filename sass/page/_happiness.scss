@@ -1,0 +1,799 @@
+.happiness {
+  background: #fff url(../images/happiness/inner_bg.png) no-repeat center 0;
+  @include screen('mobile') {
+    background: none;
+    padding: 5em 1em 0 1em;
+  }
+  .toptitle {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.7rem;
+    @include screen('mobile') {
+      position: relative;
+      top: 0;
+      border-bottom: 2px solid #984696;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+      border-radius: 9px;
+      background: #984696 url(../images/happiness/inner_bg.png) no-repeat center 0;
+      margin: 15px;
+      width: auto;
+    }
+    img {
+      margin-bottom: 16px;
+      @include screen('mobile') {
+        display: none;
+      }
+    }
+  }
+  .function_panel {
+    @include screen('mobile') {
+      width: 100%;
+      float: none;
+      top: 0;
+      padding: 0;
+      margin: 0 15px 0 0;
+      position: relative;
+    }
+  }
+}
+
+.happiness_center {
+  width: 63%;
+  float: left;
+  margin-right: 30px;
+  @include screen('mobile') {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-top: 6px;
+  }
+  h3.title {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    color: #444;
+  }
+  .more {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      display: inline-block;
+      padding: 12px 30px;
+      color: #fff;
+      border-radius: 9px;
+      background: #9c4694;
+      font-size: 1.125rem;
+      transition: all .5s;
+      &:hover,
+      &:focus {
+        background: #00857C;
+        color: #fff;
+      }
+      &:focus {
+        outline: 2px solid $primaryColor;
+      }
+    }
+  }
+  .welcome {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 99;
+    .welcome_slogan {
+      font-size: 1.75rem;
+      font-weight: bold;
+      line-height: 100%;
+      margin: 0 .5rem 1rem 0;
+      color: #9c4694;
+    }
+    .welcome_alertblock {
+      position: relative;
+      .alerticon {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        &:before {
+          content: "";
+          width: 32px;
+          height: 32px;
+          display: block;
+          background: url(../images/happiness/alert.png) no-repeat center center;
+        }
+        .number {
+          width: 22px;
+          height: 22px;
+          display: block;
+          border-radius: 50%;
+          background: #fe3d63;
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          border: 2px solid #fff;
+        }
+        &:focus {
+          outline: 2px solid #984696;
+        }
+      }
+      .alertlist {
+        background: #fff;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+        border-radius: 9px;
+        border: 1px solid #c690c1;
+        position: absolute;
+        left: -30px;
+        top: 50px;
+        width: 300px;
+        padding: .5rem 1rem;
+        box-sizing: border-box;
+        &:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 15px 20px 15px;
+          border-color: transparent transparent #fff transparent;
+          position: absolute;
+          top: -18px;
+          left: 30px;
+          z-index: 9;
+        }
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 15px 20px 15px;
+          border-color: transparent transparent #c690c1 transparent;
+          position: absolute;
+          top: -20px;
+          left: 30px;
+          z-index: 8;
+        }
+        ul {
+          @include li-reset;
+          li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #a6a6a6;
+            color: #4f4f4f;
+            a {
+              color: #4f4f4f;
+              display: block;
+              position: relative;
+              .alert_text {
+                color: #4f4f4f;
+                position: relative;
+                // &:before {
+                //   content: "";
+                //   width: 8px;
+                //   height: 8px;
+                //   display: block;
+                //   border-right: 1px solid #555;
+                //   border-bottom: 1px solid #555;
+                //   position: absolute;
+                //   right: 10px;
+                //   top: 7px;
+                //   transform: rotate(-45deg);
+                // }
+              }
+              .alert_time {
+                color: #be092d;
+                font-size: .9375rem;
+              }
+              &:hover {
+                text-decoration: underline;
+              }
+              &:focus {
+                outline: 2px solid #984696;
+              }
+            }
+          }
+        }
+        .more {
+          text-align: right;
+          margin-top: 8px;
+          a {
+            padding: 6px 12px;
+            display: inline-block;
+            background: #9c4694;
+            color: #fff;
+            border-radius: 7px;
+            font-size: .875rem;
+            transition: all .5s;
+            &:hover,
+            &:focus {
+              background: #00857C;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .happiness_slider {
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    .slick-prev {
+      left: 0;
+      &:focus {
+        border: 2px solid #984696;
+        box-shadow: none;
+      }
+    }
+    .slick-next {
+      right: -1px;
+      &:focus {
+        border: 2px solid #984696;
+        box-shadow: none;
+      }
+    }
+    .pic {
+      a {
+        img {
+          @include screen('mobile') {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .happiness_news {
+    margin-bottom: 30px;
+    ul {
+      @include li-reset;
+      li {
+        padding: 12px 0;
+        border-bottom: 1px solid #cdcdcd;
+        font-size: .9375rem;
+        display: flex;
+        align-items: center;
+        time {
+          display: inline-block;
+        }
+        span.dep {
+          color: #fff;
+          padding: 8px;
+          border-radius: 30px;
+          margin: 0 12px;
+          display: block;
+          white-space: nowrap;
+          &.color1 {
+            background: #00857C;
+          }
+          &.color2 {
+            background: #D11036;
+          }
+          &.color3 {
+            background: #AC5834;
+          }
+        }
+        .text {
+          display: block;
+          overflow: hidden;
+          a {
+            color: #444;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover,
+            &:focus {
+              color: #9c4694;
+              text-decoration: underline;
+              outline: 2px solid $primaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  .happiness_questionnaire {
+    margin-bottom: 36px;
+    .questionnaire_slogan {
+      font-size: 1.125rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    ul {
+      @include li-reset;
+      display: flex;
+      @include screen('mobile') {
+        flex-direction: column;
+      }
+      li {
+        display: flex;
+        flex: 1 1 45%;
+        @include screen('mobile') {
+          margin-bottom: 10px;
+        }
+        a {
+          color: #fff;
+          background: #9c4694;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-self: stretch;
+          width: 100%;
+          padding: 32px 18px;
+          margin-right: 8px;
+          border-radius: 8px;
+          transition: all .5s;
+          &:hover,
+          &:focus {
+            color: #444;
+            background: #ffbda1;
+          }
+          &:focus {
+            outline: 2px solid #00857C;
+          }
+          @include screen('mobile') {
+            margin-right: 0;
+          }
+          .questionnaire_text {
+            font-size: 1.125rem;
+            margin-bottom: 8px;
+          }
+          .questionnaire_more {
+            text-align: right;
+            &:after {
+              content: "→";
+              margin-left: 4px;
+            }
+          }
+        }
+        &:nth-child(2) a {
+          background: #f8e8f6;
+          color: #444;
+          &:hover,
+          &:focus {
+            color: #fff;
+            background: #9c4694;
+          }
+        }
+        &:last-child {
+          flex: 1 1 80px;
+          margin-right: 0;
+          a {
+            background: #7f7f7f;
+            &:hover,
+            &:focus {
+              background: #00857C;
+              color: #fff;
+            }
+            &:focus {
+              outline: 2px solid $primaryColor;
+            }
+            &:after {
+              content: "";
+              width: 30px;
+              height: 14px;
+              display: block;
+              background: url("../images/happiness/arrow.png");
+            }
+          }
+        }
+      }
+    }
+  }
+  .happiness_video {
+    margin-bottom: 36px;
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .happiness_class {
+    margin-bottom: 36px;
+    .happiness_class_slider {
+      .slick-next {
+        right: -1px;
+      }
+      .slick-prev {
+        left: 0;
+      }
+      .slick-list {
+        margin: 0 -10px;
+      }
+      .class {
+        padding: 0 10px;
+        a {
+          color: #444;
+          .pic {
+            margin-bottom: 10px;
+            width: 100%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: auto;
+              transition: all .5s;
+              transform: scale(1);
+            }
+          }
+          .text {}
+          &:hover,
+          &:focus {
+            color: #984696;
+            text-decoration: underline;
+            .pic {
+              img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.happiness_right {
+  padding-top: 44px;
+  overflow: hidden;
+  @include screen('mobile') {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  .happiness_quotes {
+    background: #ffbda1;
+    padding: 24px;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    .quotes_title {
+      margin: 0;
+      color: #9c4694;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-size: 1.125rem;
+      &:before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        background: url(../images/happiness/sun.png) no-repeat center center;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+    .slogan {
+      font-size: 1.125rem;
+      color: #000;
+    }
+  }
+  .happiness_member {
+    color: #fff;
+    background: #f8e8f6;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    .member_top {
+      padding: 24px;
+      background: #9c4694;
+      .score_title {
+        margin: 0 0 8px 0;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+        font-size: 1.25rem;
+        font-weight: normal;
+      }
+      .member_division {
+        margin-bottom: 12px;
+        &:before {
+          content: "";
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          background: url(../images/happiness/arrow3.png) no-repeat center center;
+          margin-right: 5px;
+          margin-top: -2px;
+          vertical-align: middle;
+        }
+      }
+      .member_state {
+        color: #9c4694;
+        background: #fff;
+        padding: 8px;
+        border-radius: 7px;
+        text-align: center;
+        font-size: 1.125rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .member_text {
+        margin-bottom: .25rem;
+        span {
+          font-weight: bold;
+          margin-right: 8px;
+          display: block;
+        }
+      }
+      .more {
+        text-align: right;
+        a {
+          color: #9c4694;
+          background: #f8e8f6;
+          padding: 8px 1rem;
+          border-radius: 7px;
+          display: inline-block;
+          transition: all .5s;
+          &:hover,
+          &:focus {
+            background: #fff;
+          }
+          &:focus {
+            outline: 2px solid #00857C;
+          }
+        }
+      }
+    }
+    .member_bottom {
+      padding: 24px;
+      font-weight: bold;
+      .score_title2 {
+        color: #444;
+        margin: 0 0 12px 0;
+        span {
+          color: #9c4694;
+        }
+      }
+      .score {
+        margin-bottom: 20px;
+        font-size: 1.875rem;
+        color: #444;
+        span {
+          color: #9c4694;
+        }
+      }
+      .learning_time {
+        color: #444;
+        span {
+          color: #9c4694;
+          font-size: 1.875rem;
+          margin-right: 4px;
+          &:nth-child(2) {
+            margin-left: 4px;
+          }
+        }
+      }
+      .more {
+        text-align: right;
+        a {
+          color: #fff;
+          background: #9c4694;
+          padding: 8px 1rem;
+          border-radius: 7px;
+          transition: all .5s;
+          display: inline-block;
+          &:hover,
+          &:focus {
+            color: #fff;
+            background: #00857C;
+          }
+          &:focus {
+            outline: 2px solid #9c4694;
+          }
+        }
+      }
+    }
+  }
+  .happiness_track {
+    padding: 24px;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #eee;
+    .track_title {
+      color: #444;
+      margin: 0 0 12px 0;
+      font-size: 1.5rem;
+    }
+    ul {
+      color: #444;
+      @include li-reset;
+      li {
+        padding: 12px 0;
+        border-bottom: 1px dotted #aeaeae;
+        .lesson {
+          margin-bottom: 4px;
+          a {
+            color: #444;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            &:hover,
+            &:focus {
+              color: #984696;
+            }
+            &:focus {
+              outline: 2px solid #9c4694;
+            }
+          }
+        }
+        .lesson_date {
+          text-align: right;
+          color: #888;
+        }
+        .lesson_feedback {
+          text-align: right;
+          margin-top: 4px;
+          a {
+            padding: 6px 12px;
+            display: inline-block;
+            background: #9c4694;
+            color: #fff;
+            border-radius: 7px;
+            font-size: .875rem;
+            transition: all .5s;
+            &:hover,
+            &:focus {
+              color: #fff;
+              background: #00857C;
+            }
+            &:focus {
+              outline: 2px solid #9c4694;
+            }
+          }
+        }
+      }
+    }
+    .more {
+      text-align: center;
+      margin-top: 12px;
+      a {
+        color: #fff;
+        background: #9c4694;
+        padding: 8px 1rem;
+        border-radius: 7px;
+        transition: all .5s;
+        display: inline-block;
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: #00857C;
+        }
+        &:focus {
+          outline: 2px solid #9c4694;
+        }
+      }
+    }
+  }
+  .happiness_link {
+    margin-bottom: 2rem;
+    .link_title {
+      color: #444;
+      margin: 0 0 12px 0;
+      font-size: 1.5rem;
+    }
+    ul {
+      @include li-reset;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        width: 48%;
+        margin-bottom: 12px;
+        overflow: hidden;
+        @include screen('mobile') {
+          width: 32%;
+        }
+        a {
+          padding: 30px 24px;
+          display: flex;
+          position: relative;
+          align-items: center;
+          border: 2px solid #fff;
+          border-radius: 9px;
+          overflow: hidden;
+          &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 7;
+            left: 0;
+            background: rgba(0, 0, 0, .5);
+          }
+          &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 6;
+            background-size: cover;
+            transition: all .5s;
+            background-position: center;
+            transform: scale(1);
+          }
+          span {
+            color: #fff;
+            position: relative;
+            z-index: 8;
+            text-align: center;
+          }
+          &:hover,
+          &:focus {
+            &:after {
+              transform: scale(1.2);
+            }
+          }
+          &:focus {
+            border: 2px solid #984696;
+          }
+        }
+        &:nth-child(1) a:after {
+          background: url(../images/happiness/banner1.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        &:nth-child(2) a:after {
+          background: url(../images/happiness/banner2.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        &:nth-child(3) a:after {
+          background: url(../images/happiness/banner3.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        &:nth-child(4) a:after {
+          background: url(../images/happiness/banner4.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        &:nth-child(5) a:after {
+          background: url(../images/happiness/banner5.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        &:nth-child(6) a:after {
+          background: url(../images/happiness/banner6.jpg) no-repeat center center;
+          background-size: cover;
+        }
+      }
+    }
+    .more {
+      text-align: center;
+      margin-top: 8px;
+      a {
+        color: #fff;
+        background: #9c4694;
+        padding: 8px 1rem;
+        border-radius: 7px;
+        transition: all .5s;
+        display: inline-block;
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: #00857C;
+        }
+      }
+    }
+  }
+}
