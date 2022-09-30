@@ -984,7 +984,451 @@ $(function() {
     }]
   });
 });
-
+// happy chart
+$(function() {
+  // happyChart1
+  $('.happyChart1 .chart').highcharts({
+    exporting: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    chart: {
+      type: 'pie',
+      spacing: [40, 0, 40, 0],
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+    },
+    title: {
+      text: '勞基法相關案件-病房/單位類別'
+    },
+    subtitle: {
+      text: '107年2-11月'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: '病房/單位類別',
+      data: [{
+        name: '醫院/醫學中心',
+        y: 75,
+        color: "#00adb9"
+      }, {
+        name: '醫院/區域醫院',
+        y: 4,
+        color: "#00a69c"
+      }, {
+        name: '醫院/病房',
+        y: 4,
+        color: "#00c09a"
+      }, {
+        name: '醫院/其他單位',
+        y: 19,
+        color: "#00d098"
+      }, {
+        name: '診所',
+        y: 3,
+        color: "#fb702a"
+      }, {
+        name: '護理機構',
+        y: 16,
+        color: "#f0c937"
+      }, {
+        name: '其他',
+        y: 5,
+        color: "#a7b7b7"
+      }]
+    }],
+    legend: {
+      layout: "horizontal"
+    }
+  });
+  // happyChart2
+  $('.happyChart2 .chart').highcharts({
+    exporting: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    chart: {
+      type: 'pie',
+      spacing: [40, 0, 40, 0],
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+    },
+    title: {
+      text: '勞基法相關案件-病房/單位類別'
+    },
+    subtitle: {
+      text: '107年2-11月'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: '病房/單位類別',
+      data: [{
+        name: '醫院/門診',
+        y: 75,
+        color: "#ab2aa7"
+      }, {
+        name: '醫院/急診',
+        y: 4,
+        color: "#b04fad"
+      }, {
+        name: '醫院/病房',
+        y: 4,
+        color: "#ca69c7"
+      }, {
+        name: '醫院/其他單位',
+        y: 19,
+        color: "#e391e0"
+      }, {
+        name: '診所',
+        y: 3,
+        color: "#5d4fb0"
+      }, {
+        name: '護理機構',
+        y: 16,
+        color: "#ff6633"
+      }, {
+        name: '其他',
+        y: 5,
+        color: "#aab7b7"
+      }]
+    }],
+    legend: {
+      layout: "horizontal"
+    }
+  });
+  // happyChart3
+  $('.happyChart3 .chart').highcharts({
+    exporting: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    chart: {
+      type: 'pie',
+      spacing: [40, 0, 40, 0],
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+    },
+    title: {
+      text: '勞基法相關案件-病房/單位類別'
+    },
+    subtitle: {
+      text: '107年2-11月'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: '病房/單位類別',
+      data: [{
+        name: '醫院/門診',
+        y: 75,
+        color: "#ab2aa7"
+      }, {
+        name: '醫院/急診',
+        y: 4,
+        color: "#b04fad"
+      }, {
+        name: '醫院/病房',
+        y: 4,
+        color: "#ca69c7"
+      }, {
+        name: '醫院/其他單位',
+        y: 19,
+        color: "#e391e0"
+      }, {
+        name: '診所',
+        y: 3,
+        color: "#5d4fb0"
+      }, {
+        name: '護理機構',
+        y: 16,
+        color: "#ff6633"
+      }, {
+        name: '其他',
+        y: 5,
+        color: "#aab7b7"
+      }]
+    }],
+    legend: {
+      layout: "horizontal"
+    }
+  });
+  // happyChart4
+  $('.happyChart4 .chart').highcharts({
+    exporting: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    chart: {
+      type: 'pie',
+      spacing: [40, 0, 40, 0],
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+    },
+    title: {
+      text: '勞基法相關案件-病房/單位類別'
+    },
+    subtitle: {
+      text: '107年2-11月'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: '病房/單位類別',
+      data: [{
+        name: '醫院/門診',
+        y: 75,
+        color: "#ab2aa7"
+      }, {
+        name: '醫院/急診',
+        y: 4,
+        color: "#b04fad"
+      }, {
+        name: '醫院/病房',
+        y: 4,
+        color: "#ca69c7"
+      }, {
+        name: '醫院/其他單位',
+        y: 19,
+        color: "#e391e0"
+      }, {
+        name: '診所',
+        y: 3,
+        color: "#5d4fb0"
+      }, {
+        name: '護理機構',
+        y: 16,
+        color: "#ff6633"
+      }, {
+        name: '其他',
+        y: 5,
+        color: "#aab7b7"
+      }]
+    }],
+    legend: {
+      layout: "horizontal"
+    }
+  });
+  // happyChart5
+  $('.happyChart5 .chart').highcharts({
+    exporting: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    chart: {
+      type: 'pie',
+      spacing: [40, 0, 40, 0],
+      backgroundColor: 'rgba(255, 255, 255, 0)'
+    },
+    title: {
+      text: '勞基法相關案件-病房/單位類別'
+    },
+    subtitle: {
+      text: '107年2-11月'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        showInLegend: true,
+        dataLabels: {
+          enabled: true,
+          format: '{point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      type: 'pie',
+      innerSize: '50%',
+      name: '病房/單位類別',
+      data: [{
+        name: '醫院/門診',
+        y: 75,
+        color: "#ab2aa7"
+      }, {
+        name: '醫院/急診',
+        y: 4,
+        color: "#b04fad"
+      }, {
+        name: '醫院/病房',
+        y: 4,
+        color: "#ca69c7"
+      }, {
+        name: '醫院/其他單位',
+        y: 19,
+        color: "#e391e0"
+      }, {
+        name: '診所',
+        y: 3,
+        color: "#5d4fb0"
+      }, {
+        name: '護理機構',
+        y: 16,
+        color: "#ff6633"
+      }, {
+        name: '其他',
+        y: 5,
+        color: "#aab7b7"
+      }]
+    }],
+    legend: {
+      layout: "horizontal"
+    }
+  });
+  // happyChart6
+});
+$(document).ready(function() {
+  var chart = {
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false
+  };
+  var title = {
+    text: '<b>總積分<br><span style="color: #994696">62.50</span> / 120.00</b>',
+    align: 'center',
+    floating: true,
+    x: 0,
+    y: 150
+  };
+  var tooltip = {
+    headerFormat: '',
+    pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+      '目前積分數: <b>{point.y}分 </b>' + '<b>({point.percentage:.1f}%)</b>'
+  };
+  var plotOptions = {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: true,
+        format: ' <b>{point.name}</b>',
+        style: {
+          color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+        }
+      },
+      showInLegend: true
+    }
+  };
+  var credits = {
+    enabled: false
+  };
+  var series = [{
+    minPointSize: '40',
+    type: 'pie',
+    innerSize: '70%',
+    zMin: '0',
+    data: [{
+      name: '專業課程',
+      y: 50.50,
+      color: "#b04fad"
+    }, {
+      name: '專業品質',
+      y: 3.50,
+      color: "#913589"
+    }, {
+      name: '專業倫理',
+      y: 1.50,
+      color: "#f07d26"
+    }, {
+      name: '專業相關法規',
+      y: 7.00,
+      color: "#FECD3C"
+    }, {
+      name: '尚缺積分',
+      y: 57.50,
+      color: "#7B7B7B"
+    }]
+  }];
+  var json = {};
+  json.chart = chart;
+  json.title = title;
+  json.tooltip = tooltip;
+  json.credits = credits;
+  json.series = series;
+  json.plotOptions = plotOptions;
+  $('.happyChart6 .chart').highcharts(json);
+});
 jQuery('img.svg').each(function() {
   var $img = jQuery(this);
   var imgID = $img.attr('id');
@@ -1017,4 +1461,20 @@ jQuery('img.svg').each(function() {
 
   }, 'xml');
 
+});
+// accordion
+$(".certificate_accordion").each(function() {
+  $(this).find(".certificate_accordion_content").hide();
+  var _accordionItem = $(this).children("ul").children("li").children("a");
+  _accordionItem.each(function() {
+    function accordion(e) {
+      $(this).parent("li").siblings().children("a").removeClass("active");
+      $(this).toggleClass("active");
+      $(this).parent("li").siblings().children(".certificate_accordion_content").slideUp();
+      $(this).next(".certificate_accordion_content").slideToggle();
+      e.preventDefault();
+    }
+    $(this).click(accordion);
+    $(this).keyup(accordion);
+  });
 });
