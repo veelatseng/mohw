@@ -1,4 +1,7 @@
 .lp {
+  p {
+    line-height: 2rem;
+  }
   table {
     td {
       text-align: left;
@@ -41,7 +44,7 @@
         }
         &>a {
           display: block;
-          padding-left: 2em;
+          padding-left: 2.2em;
           position: relative;
           line-height: 1.45em;
           color: $color-word;
@@ -59,7 +62,6 @@
             left: 0;
             &:after {
               content: ".";
-              display: inline-block;
             }
           }
         }
@@ -155,8 +157,8 @@
           h3 {
             overflow: hidden;
             line-height: 1.5em;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
             display: block;
             margin: 0 0 5px 0;
           }
@@ -166,10 +168,10 @@
               font-size: .875rem;
               margin-top: 10px;
               overflow: hidden;
-              text-overflow: ellipsis;
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
+              // text-overflow: ellipsis;
+              // display: -webkit-box;
+              // -webkit-line-clamp: 2;
+              // -webkit-box-orient: vertical;
             }
           }
           time {

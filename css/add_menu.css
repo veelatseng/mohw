@@ -19,7 +19,7 @@
   margin: 0px;
   font-family: "Varela Round", Nunito, Montserrat, sans-serif;
   text-transform: capitalize;
-  letter-spacing: 0.025rem;
+  /* letter-spacing: 0.025rem; */
 }
 
 .en_menu>ol {
