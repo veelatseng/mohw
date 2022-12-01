@@ -69,7 +69,7 @@
 .en_menu>ol>li a {
   color: #FFFFFF;
   display: block;
-  padding: 15px;
+  padding: 15px 16px;
   position: relative;
   text-decoration: none;
   z-index: 1;
