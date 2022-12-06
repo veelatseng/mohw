@@ -78,6 +78,7 @@
 .en_menu>ol>li a:hover,
 .en_menu>ol>li a:focus {
   color: #b45db2;
+  box-shadow: none;
 }
 
 .en_menu>ol>li>a {
@@ -418,6 +419,11 @@
 .ch_menu>ol .sub-menu li a:hover:after,
 .ch_menu>ol .sub-menu li a:focus:after {
   width: 15px;
+}
+
+.ch_menu a:focus,
+.ch_menu a:hover {
+  box-shadow: none;
 }
 
 @media (min-width: 980px) {
