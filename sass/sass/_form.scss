@@ -194,7 +194,23 @@ button,
 input[type="button"],
 {
   @extend %btn;
+  // @include btn_setting($form-focus, #FFF);
   @include btn_setting($form-focus, #FFF);
+  min-width: 5em;
+  margin: 0.25em 0.1em;
+  width: auto;
+  box-shadow: 0px 2px 2px RGBA(0, 0, 0, 0.08);
+  text-shadow: RGBA(0, 0, 0, 0.3) 0px 0px 0px;
+  &:disabled,
+  &[disabled] {
+    @include btn_setting(#444, #222);
+    &:hover,
+    &:focus {
+      background: #444!important;
+      border: 1px solid #aaa!important;
+      color: #222!important;
+    }
+  }
 }
 
 input[type="submit"] {
@@ -364,4 +380,23 @@ img.captcha {
 abbr[title] {
   border-bottom: none;
   text-decoration: none;
+}
+
+button:disabled,
+button[disabled],
+input[type="button"]:disabled,
+input[type="button"][disabled],
+input[type="submit"]:disabled,
+input[type="submit"][disabled],
+.btn-purple:disabled,
+.btn-purple[disabled] {
+  background: #f2f2f2!important;
+  border: 1px solid #bbb!important;
+  color: #999!important;
+  &:hover,
+  &:focus {
+    background: #f2f2f2!important;
+    border: 1px solid #bbb!important;
+    color: #999!important;
+  }
 }
