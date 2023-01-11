@@ -313,6 +313,8 @@
         time {
           display: inline-block;
           margin: 0 12px 0 0;
+          width: 80px;
+          white-space: nowrap;
         }
         span.dep {
           color: #fff;
